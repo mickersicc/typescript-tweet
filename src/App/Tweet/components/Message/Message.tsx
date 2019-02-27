@@ -1,10 +1,7 @@
 import * as React from 'react';
+import TMessage from '../../types/Message.type';
 
-interface IMessage {
-    text: string;
-}
-
-const Message: React.SFC<IMessage> = (props) => (
+const Message: React.SFC<TMessage> = (props) => (
     <div className='message'>
         { props.text }
     </div>

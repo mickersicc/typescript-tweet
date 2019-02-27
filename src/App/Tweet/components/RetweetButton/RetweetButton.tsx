@@ -1,8 +1,5 @@
 import * as React from 'react';
-
-interface IRetweetButton {
-    count: number;
-}
+import TRetweetButton from '../../types/TRetweetButton.type';
 
 const getRetweetCount = (count: number) => {
     if (count > 0) {
@@ -16,7 +13,7 @@ const getRetweetCount = (count: number) => {
     }
 }
 
-const RetweetButton: React.SFC<IRetweetButton> = (props) => (
+const RetweetButton: React.SFC<TRetweetButton> = (props) => (
     <span className='retweet-button'>
         <i className='fa fa-retweet' />
         {getRetweetCount(props.count)}

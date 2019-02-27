@@ -1,12 +1,8 @@
 import * as React from 'react';
-import { AuthorModel } from '../../models/Tweet.model';
+import TNameWithHandle from '../../types/NameWithHandle.type';
 import './NameWithHandle.css';
 
-interface INameWithHandle {
-    author: AuthorModel
-}
-
-const NameWithHandle: React.SFC<INameWithHandle> = (props) => {
+const NameWithHandle: React.SFC<TNameWithHandle> = (props) => {
     const { name, handle } = props.author;
 
     return (

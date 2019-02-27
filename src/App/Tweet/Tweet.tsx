@@ -7,24 +7,11 @@ import ReplyButton from './components/ReplyButton/ReplyButton';
 import RetweetButton from './components/RetweetButton/RetweetButton';
 import LikeButton from './components/LikeButton/LikeButton';
 import MoreOptionsButton from './components/MoreOptionsButton/MoreOptionsButton';
+import TTweet from './types/Tweet.type';
 import './Tweet.css';
 
-interface IAuthor {
-    handle: string;
-    name: string;
-}
-
-interface ITweet {
-    message: string;
-    gravatar: string;
-    author: IAuthor;
-    likes: number;
-    retweets: number;
-    timestamp: string
-}
-
-interface Props {
-    tweet: ITweet
+type Props = {
+    tweet: TTweet
 }
 
 export default class Tweet extends React.Component<Props> {

@@ -1,10 +1,7 @@
 import * as React from 'react';
+import TLikeButton from '../../types/LikeButton.type';
 
-interface ILikeButton {
-    count: number;
-}
-
-const LikeButton: React.SFC<ILikeButton> = (props) => (
+const LikeButton: React.SFC<TLikeButton> = (props) => (
     <span className='like-button'>
         <i className='fa fa-heart' />
         {props.count > 0 && 
